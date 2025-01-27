@@ -1,0 +1,1 @@
+from src.viz.plot import plot_mean_temperature_by_location
