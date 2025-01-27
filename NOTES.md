@@ -16,7 +16,7 @@ The code is set to query 50 test locations, and a set of weather variables which
 
 ## Design decisions
 
-- __Storage__ - I have decided to experiment with using __Iceberg__ as a means to store Parquet files. It's something I have wanted to have a go at anyway, and its capabilities to store and access large amounts of data flexibly - allowing evolution over time - and supporting snapshotting made it seem like a suitable solution for this problem.
+- __Storage__ - I have decided to experiment with using Iceberg as a means to store Parquet files. It's something I have wanted to have a go at anyway, and its capabilities to store and access large amounts of data flexibly - allowing evolution over time - and supporting snapshotting made it seem like a suitable solution for this problem.
 
 - __API Access__ - I've used the openmeteo-requests library to abstract some of the boilerplate API calls if using the requests library. A library like this can have downsides if poorly maintained or may lack flexibility if incomplete; however, this library seems reliably maintained and fairly complete.
 
@@ -62,6 +62,6 @@ AI Used:
 - Chat GPT
     - Bouncing initial high-level ideas
     - Generating list of 50 test location latitude/longitudes
-    - Generating Mermaid diagram in Readme
-    - Exploration of Iceberg and Arrow implementation details
+    - Generating Mermaid diagram in notes
+    - Exploration of Iceberg and PyArrow implementation details
 - GitHub Copilot
